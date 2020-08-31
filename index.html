@@ -15,10 +15,18 @@
             </div>
         </header>
 
+        <select name="" id="scelta">
+            <option value="All">All</option>
+            <option value="Rock">Rock</option>
+            <option value="Metal">Metal</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Pop">Pop</option>
+        </select>
+
         <div class="cds-container container"></div>
 
         <script id="entry-template" type="text/x-handlebars-template">
-            <div class="cd">
+            <div class="cd {{genre}}">
               <img src="{{poster}}" alt="">
               <h3>{{title}}</h3>
               <span class="author">{{author}}</span>
