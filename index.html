@@ -17,10 +17,6 @@
 
         <select name="" id="scelta">
             <option value="All">All</option>
-            <option value="Rock">Rock</option>
-            <option value="Metal">Metal</option>
-            <option value="Jazz">Jazz</option>
-            <option value="Pop">Pop</option>
         </select>
 
         <div class="cds-container container"></div>
@@ -32,6 +28,10 @@
               <span class="author">{{author}}</span>
               <span class="year">{{year}}</span>
             </div>
+        </script>
+
+        <script id="template-select" type="text/x-handlebars-template">
+            <option value="{{genre}}">{{genre}}</option>
         </script>
 
         <script src="main.js" charset="utf-8"></script>
